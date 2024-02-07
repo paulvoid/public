@@ -50,8 +50,8 @@ function performance()
 
     InputService.WindowFocused:Connect(function()
         RunService:Set3dRenderingEnabled(true)
-        settings().Rendering.QualityLevel = OldLevel
-        setfpscap(60)
+        settings().Rendering.QualityLevel = 1
+        setfpscap(_TARGETFPS)
     end)
 
     InputService.WindowFocusReleased:Connect(function()

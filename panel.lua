@@ -105,7 +105,7 @@ pcall(function()
             pvData['content']['Inventory']['Blox Fruit'] = {}
             pvData['content']['Inventory']['Material'] = {}
             pvData['content']['Awakened Abilities'] = {}
-            dataFind = { 'Level', 'Beli', 'Fragments', 'DevilFruit' ,'Bounty'}
+            dataFind = { 'Level', 'Beli', 'Fragments', 'DevilFruit' }
             meleeList = {
                 { 'Superhuman', 'BuySuperhuman' },
                 { 'Death Step', 'BuyDeathStep' },
@@ -242,7 +242,7 @@ end
                 pvData['content']['Data']['MasteryDevilFruitMain'] = additionalData['MasteryDevilFruitMain'] or "default_value_for_MasteryDevilFruitMain"
                 pvData['content']['Data']['FullMasteryDevilFruitMain'] = additionalData['FullMasteryDevilFruitMain'] or "default_value_for_FullMasteryDevilFruitMain"
                 pvData['content']['Data']['FullAWK'] = additionalData['FullAWK'] or "default_value_for_FullAWK"
-
+                pvData['content']['Data']['Bounty'] = game.Players.LocalPlayer.leaderstats:FindFirstChild('Bounty/Honor').Value
                 pvData['content']['Data']['Race'] = game.Players.LocalPlayer.Data.Race.Value..race
                 warn('data')
             end)
